@@ -5,16 +5,21 @@ function preload() {}
 function setup() 
 { 
     // Canvas
-    var canvas = createCanvas(600, 480);
+    canvas = createCanvas(600, 480);
+    canvas.center();
 
     // Video
-    var video = createCapture(VIDEO); // Webcam Access
-    
+    video = createCapture(VIDEO); // Webcam Access
+    video.hide();
 }
 
 function draw() 
 { 
-    image(video, 0, 0, 1200, 480);
-    ellipse(100, 100, 80, 80);
+    
+    image(video, 120, 125, 350, 225);
+    ellipse(50, 50, 80, 80);
+    ellipse(50, 430, 80, 80);
+    ellipse(555, 50, 80, 80);
+    ellipse(555, 430, 80, 80);
     fill("red");
 }
